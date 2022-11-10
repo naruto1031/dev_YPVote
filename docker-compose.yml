@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  proxy:
+    container_name: fullstack-proxy
+    build: ./docker/nginx
+    # 開放するポート番号
+    ports:
+      - "8000:80"
+    # ローカルマシンのディレクトリと仮想コンテナディレクトリを同期する部分(ローカル):(ゲストディレクトリ)
+    volumes:
+      - ./src:usr/share/nginx/html
