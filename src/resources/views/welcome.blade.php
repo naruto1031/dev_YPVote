@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta http-equiv="Content-Language" content="ja">
+        <meta name="google" content="notranslate">
         <title>Laravel Vite React 3</title>
         @viteReactRefresh
         @vite('resources/js/app.js')
@@ -11,5 +12,6 @@
     <body>
         <div id="header"></div>
         <div id="example"></div>
+        <div>text-footer</div>
     </body>
 </html>
