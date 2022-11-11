@@ -9,7 +9,7 @@ function Example() {
                     <div className="card">
                         <div className="card-header">Example Component</div>
 
-                        <div className="card-body">I'm an example component!</div>
+                        <div className="card-body">I'm an example component!!!!!</div>
                     </div>
                 </div>
             </div>
@@ -17,8 +17,16 @@ function Example() {
     );
 }
 
-export default Example;
+function Header() {
+    return (
+        <header>header_contents</header>
+    );
+}
 
+export default {Example, Header};
 if (document.getElementById('example')) {
     ReactDOM.render(<Example />, document.getElementById('example'));
+}
+if (document.getElementById('header')) {
+    ReactDOM.render(<Header />, document.getElementById('header'));
 }
