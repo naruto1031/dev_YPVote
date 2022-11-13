@@ -17,16 +17,8 @@ function Example() {
     );
 }
 
-function Header() {
-    return (
-        <header>header_contents</header>
-    );
-}
 
-export default {Example, Header};
+export default {Example};
 if (document.getElementById('example')) {
     ReactDOM.render(<Example />, document.getElementById('example'));
-}
-if (document.getElementById('header')) {
-    ReactDOM.render(<Header />, document.getElementById('header'));
 }

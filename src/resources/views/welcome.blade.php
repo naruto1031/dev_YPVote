@@ -12,6 +12,6 @@
     <body>
         <div id="header"></div>
         <div id="example"></div>
-        <div>text-footer</div>
+        <div style="font-size: 2em">text-footer</div>
     </body>
 </html>
